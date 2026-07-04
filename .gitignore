@@ -1,1 +1,7 @@
 ".env" 
+
+.vscode/
+.reasonix/
+Hello-Agents.pdf
+__pycache__/
+*.pyc

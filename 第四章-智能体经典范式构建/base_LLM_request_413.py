@@ -47,6 +47,7 @@ class HelloAgents:
                     print("\n")
                 print(chunk.choices[0].delta.content,end="")
                 collect_content.append(chunk.choices[0].delta.content)
+                
         
     
 if __name__=='__main__':
@@ -70,8 +71,9 @@ if __name__=='__main__':
     ]
 
     # 调用请求
-    res=llm_client.think(messages=messages)
-    print(res)
+    llm_client.think(messages=messages)
+
+
 
 
     
